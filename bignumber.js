@@ -56,7 +56,7 @@ with({$: BigNumber, o: BigNumber.prototype}){
         else if(this == "0")
             return new BigNumber;
         var o = new BigNumber(this), a = o._d, b = n._d, la = a.length - o._f,
-        lb = b.length - n._f, r = new BigNumber, i = 0, j, s, l, f = 1, c = 0, e = 0;
+        lb = b.length - n._f, r = new BigNumber, i = 0, j, s, l, f = 1, c = 0, e = 0, y = 0;
         r._s = o._s != n._s, r.precision = Math.max(o.precision, n.precision),
         r._f = +r._d.pop(), la != lb && o._zeroes(la > lb ? b : a, Math.abs(la - lb));
         n._f = b.length, b = n, b._s = false, b = b.round();
